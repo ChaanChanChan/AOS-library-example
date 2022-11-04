@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    color:#000000;
+    color: #016FB9;
+    color: #FF9505;
+    color: #EC4E20;
+    color: #353531;
+
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #353531;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue';
+    text-align: center;
+}
+
+/* main{
+    scroll-snap-type: y mandatory;
+} */
+
+header, section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* scroll-snap-align: center; */
+}
+
+h1{
+    font-size: 10rem;
+    color: #FF9505;
+}
+
+h1:nth-child(2){
+    color: #016FB9;
+}
+
+h2{
+    font-size: 10rem;
+    color: #EC4E20;
+}
+
+p{
+    font-size: 3rem;
+    color: rgb(222, 222, 222);
+}
+
+
+section:nth-of-type(1){
+    background-color: #FF9505;
+}
+
+section:nth-of-type(1) h2{
+    color: #353531;
+}
+
+
+section:nth-of-type(1) p{
+    color: #353531;
+}
+
+
+
+
+
+/* COMBINATIONS */
+
+.combination-container{
+    background-color: #FF9505;
+}
+
+.combination-container h2{
+    color: #353531;
+}
+
+
+.combination{
+    height: 300vh;
+    margin: 0 auto;
+}
+
+.combination article{
+    width: 100%;
+    height: 120vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.combination article:nth-child(1){
+    background-color: #016FB9;
+}
+
+.combination article:nth-child(2){
+    background-color: #FF9505;
+}
+
+.combination article:nth-child(3){
+    background-color: #EC4E20;
+}
+
+.combination article > p{
+    width: 15rem;
+    height: 10rem;
+    font-size: 5rem;
+    color: #353531;
+    border-radius: 0.3rem;
+    white-space: nowrap;
+}
+
+.buttons{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    border-radius: 0.3rem;
+}
+
+
+
+
+
+/* GRID */
+
+.main-content h2{
+  color: #e26d5c;
+  font-weight: lighter;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+
+.main-content{
+    /* display: block; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 599px) {
+  .main-content{padding: 5%;}
+}
+
+
+.portfolio{
+  display: grid;
+  width: 100%;
+  max-width: 700px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-bottom: 10%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 5px;
+}
+
+.portfolio-item{
+  cursor: pointer;
+  background-color: #e26d5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: brightness(100%);
+  transition: all .5s ease;
+}
+
+.portfolio-item a{
+  z-index: 5;
+}
+
+.portfolio-item:hover{
+  filter: brightness(50%);
+}
+
+.portfolio-item.small{
+  grid-row: span 1;
+  grid-column: span 1;
+  background-image: url(img/small.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.portfolio-item.medium{
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.portfolio-item.one{
+  background-image: url(img/medium\ 1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-item.two{
+  background-image: url(img/medium\ two.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+.portfolio-item.large{
+  grid-row: span 3;
+  grid-column: span 3;
+  background-image: url(img/large.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-item.tall{
+  grid-row: span 3;
+  grid-column: span 2;
+  background-image: url(img/tall.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-item.wide{
+  grid-row: span 2;
+  grid-column: span 3;
+  background-image: url(img/wide.png);
+  background-size: cover;
+  background-position: center;
+}

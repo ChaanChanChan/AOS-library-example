@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>AOS</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 data-aos="flip-up" data-aos-delay="500">
+            WELCOME TO
+        </h1>
+
+        <h1 data-aos="fade-up" data-aos-delay="1000">
+            AOS
+        </h1>
+    </header>
+
+    <main>
+        <section>
+            <h2 data-aos="fade-down" data-aos-delay="700" data-aos-once="true">QUÉ ES AOS?</h2>
+            <p data-aos="fade-left" data-aos-delay="1200">Animation On Scrool</p>
+            <p data-aos="fade-right" data-aos-delay="1600">Es una librearia para crear animaciones mediante el scroll
+            </p>
+        </section>
+
+        <section>
+            <h2 data-aos="fade-down" data-aos-delay="700">CÓMO SE USA?</h2>
+            <p data-aos="fade-up" data-aos-delay="700">Mediante metadatos en las etiquetas HTML</p>
+            <p data-aos="fade-up" data-aos-delay="700">data-aos=" "</p>
+        </section>
+
+        <section>
+            <h2 data-aos="flip-down" data-aos-delay="700">POR QUÉ?</h2>
+            <p data-aos="fade-up" data-aos-delay="700">window.addeventlistener('scroll')</p>
+            <p data-aos="fade-up" data-aos-delay="700">opacity: 0;</p>
+            <p data-aos="fade-up" data-aos-delay="700">transform: translate;</p>
+        </section>
+
+
+        <!-- COMBINACIONES -->
+        <section data-aos="flip-left" data-aos-delay="700" class="combination-container">
+            <h2 data-aos="flip-left" data-aos-delay="1000">COMBINACIONES</h2>
+            <p data-aos="fade-up" data-aos-delay="700">TIPO - DURADA - DELAY</p>
+        </section>
+
+
+        <section class="combination">
+
+            <article>
+                <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="600">FADE UP</p>
+                <p data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="800">FADE LEFT
+                </p>
+                <p data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1100">FADE
+                    DOWN</p>
+                <p data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000" data-aos-delay="1400">FADE
+                    RIGHT</p>
+            </article>
+
+            <article>
+                <p data-aos="flip-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="600">
+                    FLIP UP
+                </p>
+                <p data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="800">
+                    FLIP
+                    LEFT</p>
+                <p data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="1100">
+                    FLIP
+                    DOWN</p>
+                <p data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
+                    data-aos-delay="1400">
+                    FLIP RIGHT</p>
+            </article>
+
+            <article>
+                <p data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="1000">ZOOM UP</p>
+                <p data-aos="zoom-in-left" data-aos-delay="800" data-aos-duration="1000">ZOOM LEFT</p>
+                <p data-aos="zoom-in-down" data-aos-delay="1000" data-aos-duration="1000">ZOOM UP</p>
+                <p data-aos="zoom-in-right" data-aos-delay="1200" data-aos-duration="1000">ZOOM LEFT</p>
+            </article>
+
+        </section>
+
+        <!-- GRID EXAMPLE -->
+        <section class="main-content">
+            <h2 id="portfolio">GRID</h2>
+            <div class="portfolio">
+                <div class="portfolio-item medium one" data-aos-delay="300" data-aos="flip-left"
+                    data-aos-duration="1000">
+                    <button href="img/medium 1.png" target="_blank"></button>
+                </div>
+                <div class="portfolio-item large" data-aos-delay="1600" data-aos="flip-up" data-aos-duration="1000">
+                    <a href="img/large.png"></a>
+                </div>
+                <div class="portfolio-item medium two" data-aos-delay="1300" data-aos="flip-right"
+                    data-aos-duration="1000">
+                    <a href="img/medium two.png"></a>
+                </div>
+                <div class="portfolio-item small" data-aos-delay="1000" data-aos="flip-down" data-aos-duration="1000">
+                    <a href="img/small.png"></a>
+                </div>
+                <div class="portfolio-item tall" data-aos-delay="800" data-aos="flip-up" data-aos-duration="1000">
+                    <a href="img/tall.png"></a>
+                </div>
+                <div class="portfolio-item wide" data-aos-delay="500" data-aos="flip-left" data-aos-duration="1000">
+                    <a href="img/wide.png"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
